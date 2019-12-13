@@ -1,0 +1,37 @@
+<style>
+    .sn-table *{border:1px solid #767676;font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+    .sn-table thead{background-color:#2185f5;color:#ffffff;}
+    .sn-table tr td:nth-child(1){width:280px}
+</style>
+<div>
+    <table class="sn-table">
+        <thead>
+            <th>Sarkaari Naukri</th>
+            <th>Vacancies</th>
+        </thead>
+        <tbody class="table-body"></tbody>
+    </table>
+</div>
+<script>
+    var obj=[
+                {name:"Railway Recruitments",qty:"0"},
+                {name:"Engineering Jobs",qty:"0"},
+                {name:"10th Pass Sarkaari Jobs",qty:"0"},
+                {name:"Diploma Holders Jobs",qty:"0"},
+                {name:"12TH Pass Sarkaari Naukri",qty:"0"},
+                {name:"ITI Sarkaari Naukri",qty:"0"},
+                {name:"Police Recruitment",qty:"0"},
+                {name:"Bank Sarkaari Jobs",qty:"0"},
+                {name:"PSC Jobs",qty:"0"},
+                {name:"SSC Sarkaari Naukri",qty:"0"},
+                {name:"Jobs for Graduates",qty:"0"},
+                {name:"Any Post Graduate Jobs",qty:"0"},
+                {name:"B.Sc Jobs",qty:"0"},
+                {name:"B.Com Jobs",qty:"0"},
+            ];
+        obj.forEach(element => {
+            var tr=document.createElement('TR');
+            tr.innerHTML='<td>'+element.name+'</td><td>'+element.qty+'</td>';            
+            document.querySelector('.table-body').appendChild(tr);
+        });
+</script>
