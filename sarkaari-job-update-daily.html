@@ -3,7 +3,13 @@
     .sn-table thead{background-color:#2185f5;color:#ffffff;}
     .sn-table tr td:nth-child(1){width:280px}
 </style>
+<strong>Sarkaari Jobs</strong> is a well managed and updated portal for the fresher and job seekers. Latest vacancies notifications of Government Jobs, Private Jobs, Exams and Results can be found easily within a click. You do not need to roam around the site to get the Application forms and apply now links.
+<br/><br/>
+Find Latest Private and <strong>Sarkaari Naukari</strong> Vacancies, Exams and Results, update on <span class="today"></span><br>
+Various Jobs information like number of vacancies and post, eligibility, state, last date of form submission, apply now link, online form fill up, exams notifications etc.
+<br/><br/>
 <div>
+    <h2>Sarkaari Jobs : Latest Sarkaari Naukari Vacancies, Updated on <span class="today"></span></h2>
     <table class="sn-table">
         <thead>
             <th>Sarkaari Naukri</th>
@@ -13,6 +19,10 @@
     </table>
 </div>
 <script>
+    var d=new Date();
+    document.querySelectorAll('.today').forEach(element => {
+        element.innerText=d.getDate()+'-'+(d.getMonth()+1)+'-'+d.getFullYear();
+    });
     var obj=[
                 {name:"Railway Recruitments",qty:"0"},
                 {name:"Engineering Jobs",qty:"0"},
